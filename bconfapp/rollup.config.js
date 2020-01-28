@@ -14,7 +14,7 @@ const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 const onwarn = (warning, onwarn) => (warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) || onwarn(warning);
 const dedupe = importee => importee === 'svelte' || importee.startsWith('svelte/');
 
-const __datasource__ = mode === 'production' ? 'http://127.0.0.1:8080' : 'http://127.0.0.1:8080';
+const __datasource__ = dev ? 'http://127.0.0.1:8080' : 'https://bconf2019.netlify.com/data';
 
 export default {
 	client: {
