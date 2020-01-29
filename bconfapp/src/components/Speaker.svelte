@@ -32,30 +32,19 @@ export let purl;
 .profileimage {
   width: 100%;
   height: 100%;
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center; */
-  clip-path: circle(50% at 50% 50%);
-  /* clip-path: circle(20.9% at 50% 50%); */
 }
 
 .timg {
   object-fit: contain; /*contain; cover */
   align-self: start;
   width: 100%;
+  clip-path: circle(45% at 50% 50%);
 }
 
 .texting {
   display: grid;
   grid-template-rows: 30px 20px 20px 20px 1fr 1fr;
   grid-row-gap: 10px;
-}
-
-.pre-header {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: #e6e6e6;
 }
 
 .name {
@@ -129,6 +118,7 @@ export let purl;
 
 @media (max-width: 500px) {
   .speaker {
+    top: 200px;
     grid-template-columns: none;
     grid-template-rows: 200px 1fr;
     width: 98%;
@@ -143,11 +133,19 @@ export let purl;
     text-align: center;
   }
 
+  .profileimage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
   .timg {
     object-fit: contain; /*contain; cover */
     align-self: start;
-    width: none;
-    height: 100%;
+    /* width: none; */
+    width: 200px;
+    clip-path: circle(45% at 50% 50%);
   }
 
   .role {

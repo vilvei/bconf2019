@@ -2,6 +2,9 @@
 
 This is a unofficial version of original Blender conference 2019 page: <a href="https://conference.blender.org/2019/schedule/">https://conference.blender.org/2019/schedule/</a>
 
+
+Demo at https://bconf2019.netlify.com/
+
 The original version is good. But I needed a bit better support for mobile devices and automatic time zone converting.
 
 * Svelte + Sapper =~ PWA
@@ -12,7 +15,7 @@ The original version is good. But I needed a bit better support for mobile devic
 * Remembers favourite presentations using localStore.
 * Main usage is sapper-export: the whole page is written down as files.
 
-** Development
+### Development
 
 You need node. Easiest way to get it is using <a href="https://github.com/nvm-sh/nvm">nvm</a>
 
@@ -22,14 +25,14 @@ nvm install v12.9.0
 ```
 
 ```bash
-git clone https://github.com/vilvei/bconf2019
+git clone https://github.com/vilvei/bconf2019.git
 # fetch testdata
 cd bconf2019/crawl
 npm i
 node fetch
 cd ..
 #start serving data
-npx http-server data -c-1
+npx http-server data --cors
 
 # start dev-server in other terminal
 cd bconf2019/bconfapp
@@ -38,24 +41,20 @@ npm run dev
 # set browser location to http://localhost:3000
 ```
 
-** Export
+### Export
 
 Exactly same steps as in Development, but the last command is.
 
 ```bash
 npm run export
- ```
-
-And the export app is in folder: bconf2019/bconfapp/__sapper__/export
-You can test it again with http-server
-
-```bash
+#And the export app is in folder: bconf2019/bconfapp/__sapper__/export
+#You can test it again with http-server
 npx http-server __sapper__/export
 ```
 
-** Creation
+### Creation
 
-The app was created:
+The app was created with svelte+sapper+rollup -template. Edited with Atom.
 
 ```bash
 npx degit "sveltejs/sapper-template#rollup" bconfapp
