@@ -7,10 +7,10 @@ Demo at https://bconf2019.netlify.com/
 
 The original version is good. But I needed a bit better support for mobile devices and automatic time zone converting.
 
-* Svelte + Sapper =~ PWA
-** <a href="https://svelte.dev/">Svelte.dev</a>
-** <a href="https://sapper.svelte.dev/">https://sapper.svelte.dev/</a>
-** <a href="https://developers.google.com/web/progressive-web-apps">PWA enables applike experience, such as offline usage.</a>
+- Svelte + Sapper =~ PWA
+  - <a href="https://svelte.dev/">Svelte.dev</a>
+  - <a href="https://sapper.svelte.dev/">https://sapper.svelte.dev/</a>
+  - <a href="https://developers.google.com/web/progressive-web-apps">PWA enables applike experience, such as offline usage.</a>
 * <a href="https://date-fns.org/">date-fns</a> enables easily all times to be in local device time.
 * Remembers favourite presentations using localStore.
 * Main usage is sapper-export: the whole page is written down as files.
