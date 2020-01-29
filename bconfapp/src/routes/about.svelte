@@ -57,7 +57,7 @@ ul {
 		<li>Same Creative Commons license as Blender official web page.</li>
 	</ul>
 
-	<h3><a href="https://this-is-placeholder.com">Github</a></h3>
+	<h3><a href="https://github.com/vilvei/bconf2019.git">Github</a></h3>
 	Ville Lukka, 2020.
 
 </div>
